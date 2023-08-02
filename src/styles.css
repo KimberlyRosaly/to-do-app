@@ -1,3 +1,14 @@
+body{
+  /* ___________________________________________ */
+  /* SUNSET BACKGROUND OF ENTIRE VIEWER */
+  height: 100vh;
+  background: linear-gradient(45deg, #ff6b6b, #993399, #feca57);
+  /* REMOVE SCROLLBARS */
+  overflow-x: hidden;  
+  overflow-y: hidden;  
+  /* ___________________________________________ */
+}
+
 .App {
   font-family: 'Courier New', Courier, monospace;
   text-align: center;
