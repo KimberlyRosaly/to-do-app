@@ -1,11 +1,11 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Login = () => {
     return(
-        <>
-            <button>A LOG IN BUTTON</button>
-        </>
+        <div>
+            <Link to={'/login'}><button>A LOG IN BUTTON</button></Link>
+        </div>
     )
 }
 export default Login;
-
