@@ -1,9 +1,10 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Signup = () => {
     return(
         <>
-            <button>A SIGN UP BUTTON</button>
+            <Link to={'/signup'}><button>A SIGN UP BUTTON</button></Link>
         </>
     )
 }
