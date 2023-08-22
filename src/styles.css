@@ -18,3 +18,11 @@ body{
   border: 5px solid orange;
   /* ___________________________________________ */
 }
+
+#portal {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1rem 1rem;
+}
