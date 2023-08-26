@@ -26,9 +26,9 @@ const handleSubmit = (e) => {
     return(
                 <div>        
                 {/* ============================================= F O R M ======== */}
-                    <div class="to-do-list-form-container">        
+                    <div className="to-do-list-form-container">        
                         {/* TEXT : USER INSTRUCTIONS : CONTEXT DESCRIPTION */}
-                        <h4 class="to-do-list-desc">INPUT<br />TO DO<br/>LIST ITEM</h4>     
+                        <h4 className="to-do-list-desc">INPUT<br />TO DO<br/>LIST ITEM</h4>     
                                 {/* TO DO LIST FORM | 
                         WHEN FORM SUBMISSION BUTTON PRESSED > DEFINED FUNCTION
                         BUTTON CLICK (e)VENT HANDED TO FUNCTION */}

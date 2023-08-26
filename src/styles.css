@@ -48,7 +48,7 @@ E L E M E N T | C L A S S | I D  ATTRIBUTES
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: GREEN;
+  background-color: rgba(37, 3, 63, 0.2);
 }
 .to-do-list-desc {
   background-color: blue;
