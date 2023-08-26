@@ -11,7 +11,7 @@ body{
   background: linear-gradient(45deg, #ff6b6b, #993399, #feca57);
   /* REMOVE SCROLLBARS */
   overflow-x: hidden;  
-  overflow-y: hidden;  
+  /* overflow-y: hidden;   */
   /* ___________________________________________ */
   margin: 0;
   display: flex;
@@ -42,7 +42,7 @@ E L E M E N T | C L A S S | I D  ATTRIBUTES
 /* ___________________________________________ */
                             /* TO-DO LIST FORM */
 /* CLASS SELECTOR */
-.to-do-list-container {
+.to-do-list-form-container {
   margin: 10%;
   padding: 5%;
   display: flex;
@@ -55,13 +55,13 @@ E L E M E N T | C L A S S | I D  ATTRIBUTES
   height: 100%;
   width: 100%;
 }
-.to-do-list-container label {
+.to-do-list-form-container label {
   background-color: yellow;
 }
-.to-do-list-container input {
+.to-do-list-form-container input {
   background-color: orange;
 }
-.to-do-list-container button {
+.to-do-list-form-container button {
   background-color: pink;
 }
 /* ___________________________________________ */
