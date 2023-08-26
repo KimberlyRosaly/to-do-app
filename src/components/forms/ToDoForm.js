@@ -48,10 +48,12 @@ const handleSubmit = (e) => {
                     APPEND TO DOs HERE | RESET UPON REFRESH
                     <hr />
                     {toDo.map((entry, iterator) => (
-                            <p key={iterator}>
+                            <div key={iterator}>
                                 <input type="checkbox" />
+                                <br />
                                 {entry}
-                            </p>
+                                <hr/>
+                            </div>
                         )                        
                     )}
                 </div>
