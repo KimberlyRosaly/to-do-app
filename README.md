@@ -49,6 +49,13 @@ React.js : https://reactjs.org/
 
 <div>
 <hr />
+
+Application has been developed side-by-side with ChatGPT, CodeSandbox.io's "Boxy," and human critical thinking, experience, and education; gathering official documentation and credible resources for comparison information, methodology, and up-to-date'ness.
+
+Please, be mindful of your mind when using AI.
+
+AI usage has been for educational and experimental exploration purposes only.
+
 <hr />
 </div>
 
