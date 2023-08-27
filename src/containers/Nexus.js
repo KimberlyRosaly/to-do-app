@@ -1,7 +1,7 @@
 import React from 'react'
 import Navigation from '../components/Navigation'
 import ToDoForm from '../components/forms/ToDoForm'
-import VideoGame from '../components/VideoGame'
+// import VideoGame from '../components/VideoGame'
 import CanvasVideoGame from '../components/CanvasVideoGame'
 
 export default function Nexus() {
