@@ -9,6 +9,21 @@ body{
   /* ___________________________________________ */
   /* SUNSET BACKGROUND OF ENTIRE VIEWER */
   background: linear-gradient(45deg, #ff6b6b, #993399, #feca57);
+
+  background-image: 
+    linear-gradient(45deg, rgba(32, 26, 26, 0.9), 
+    rgba(153, 51, 153, 0.9), 
+    rgba(254, 202, 87, 0.9)), 
+    url('https://i.ibb.co/tB7DWp1/pixels-top-down-black-25opac.png');
+
+  background-blend-mode: lighten;
+
+
+
+
+
+
+  
   /* REMOVE SCROLLBARS */
   overflow-x: hidden;  
   /* overflow-y: hidden;   */
@@ -48,15 +63,16 @@ E L E M E N T | C L A S S | I D  ATTRIBUTES
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(37, 3, 63, 0.2);
+  background-color: rgba(0, 0, 0, 0.2);
+  border: dashed 4px black;
 }
 .to-do-list-desc {
-  background-color: blue;
+  /* background-color: rgba(0, 0, 0, 0.544); */
   height: 100%;
   width: 100%;
 }
 .to-do-list-form-container label {
-  background-color: yellow;
+  /* background-color: yellow; */
 }
 .to-do-list-form-container input {
   background-color: orange;
