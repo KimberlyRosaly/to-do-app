@@ -23,8 +23,8 @@ export default function CanvasVideoGame() {
       // REFERENCE THE <CANVAS> ELEMENT ON THE DOM
     const ctx = canvas.getContext('2d');
     // RETRIEVE THE SPECIFIED '2D' RENDERING CONTEXT FOR THE CANVAS OBJECT
-    canvas.style.width = `${window.innerWidth -100 }px`;
-    canvas.style.height = '50%'; 
+    canvas.style.width = `75%`;
+    canvas.style.height = '100%'; 
     const gradient = ctx.createLinearGradient(0, 0, 0, canvas.height);
     // ___________________________________________________________________
     // GRADIENT - COLOR STOPS:
@@ -37,6 +37,11 @@ export default function CanvasVideoGame() {
     ctx.lineWidth = 10;
     ctx.fillRect(0, 0, canvas.width, canvas.height);
     ctx.strokeRect(0,0,canvas.width, canvas.height);
+
+
+
+
+
   }, []);
 
   return (<div>
