@@ -6,7 +6,9 @@ import { useState } from 'react'
 export default function ToDoForm() {
 // -----------------------------------------S T A T E
 // DECLARE VARIABLE, DECLARE A FUNCTION TO SET VARIABLE'S VALUE
-const [ toDo, setTodo ] = useState([]) // USE STATE TO SET A DEFAULT VALUE : EMPTY ARRAY
+const [ toDos, setToDos ] = useState([]) // USE STATE TO SET A DEFAULT VALUE : EMPTY ARRAY
+
+const [ completedItems, setCompletedItems ] = useState([]);
 // ------------------------------------------STATEend
 
 // __________________________________________________
@@ -16,10 +18,23 @@ const handleSubmit = (e) => {
     // GRAB VALUE OFF OF DOCUMENT OBJECT MODEL (DOM)
     const inputFieldValue = e.target.name.value 
     // DISPLAY VALUE TO CONSOLE = = = = = = = = = = = = = = = =T E S T I N G
-    console.log('Input Box Value:', inputFieldValue, e.target, e.target.name, toDo)
+    console.log('Input Box Value:', inputFieldValue, e.target, e.target.name, toDos)
     // LEVERAGE STATE > TODO ARRAY - COPY ALL EXISTING VALUES AND ADD NEW ENTRY OF INPUT BOX STRING VALUE
-    setTodo([...toDo, inputFieldValue]);
+    setToDos([...toDos, inputFieldValue]);
     e.target.reset();
+};
+
+
+// __________________________________________________
+//                          CHECKBOX (e)VENT HANDLING
+const handleCheckboxChange = (index) => {
+
+    if (completedItems.includes(index)) {
+        setCompletedItems(completedItems.filter((item) => item !== index));
+    } else {
+        setCompletedItems([...completedItems, index]);
+    }
+
 };
 // __________________________________________________
 
@@ -47,9 +62,9 @@ const handleSubmit = (e) => {
                 <div>
                     APPEND TO DOs HERE | RESET UPON REFRESH
                     <hr />
-                    {toDo.map((entry, iterator) => (
-                            <div key={iterator}>
-                                <input type="checkbox" />
+                    {toDos.map((entry, iterator) => (
+                            <div key={iterator} className={completedItems.includes(iterator) ? 'completed' : ''}>
+                                <input type="checkbox" onChange={() => handleCheckboxChange(iterator)} />
                                 <br />
                                 {entry}
                                 <hr/>
