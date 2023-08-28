@@ -10,13 +10,17 @@ body{
   /* SUNSET BACKGROUND OF ENTIRE VIEWER */
   background: linear-gradient(45deg, #ff6b6b, #993399, #feca57);
 
-  background-image: 
-    linear-gradient(45deg, rgba(32, 26, 26, 0.9), 
-    rgba(153, 51, 153, 0.9), 
+  /* background-image: 
+    linear-gradient(45deg,
+    rgb(26, 24, 24), 
+    rgba(57, 28, 57, 0.9), 
     rgba(254, 202, 87, 0.9)), 
-    url('https://i.ibb.co/tB7DWp1/pixels-top-down-black-25opac.png');
+    url('https://i.ibb.co/S65pWDV/pixels-holographic-25opac.png');
 
-  background-blend-mode: lighten;
+  background-blend-mode: color-dodge;
+
+  background-size: cover;
+  background-repeat: no-repeat; */
 
 
 
@@ -57,7 +61,6 @@ E L E M E N T | C L A S S | I D  ATTRIBUTES
 /* ____________________N A V I G A T I O N____ */
 .navigation-container {
   display: grid;
-  /* grid-template-rows: auto; */
 }
 .navigation-list {
   list-style-type: none;
@@ -65,13 +68,15 @@ E L E M E N T | C L A S S | I D  ATTRIBUTES
   padding: 0;
   display: grid;
   grid-auto-flow: column;
-  gap: 20px;
 }
 
 .navigation-list li a {
   text-decoration: none;
   color: black;
   font-weight: bold;
+  border: 5px solid black;
+  padding: 10px;
+  background-color: rgb(117 190 218 / 0.2);
 }
 /* ___________________________________________ */
 /* ___________________________________________ */
@@ -101,6 +106,13 @@ E L E M E N T | C L A S S | I D  ATTRIBUTES
   background-color: pink;
 }
 /* ___________________________________________ */
+                             /* SVG VIDEO GAME */
+.svg-container {
+  background-color: rgba(0, 0, 0, 0.501);
+ 
+
+}
+/* ___________________________________________ */
                      /* USER SIGN UP AND LOGIN */
 #portal {
   display: flex;
@@ -110,4 +122,9 @@ E L E M E N T | C L A S S | I D  ATTRIBUTES
   padding: 1rem 1rem;
 }
 /* ___________________________________________ */
+
+
+
+
+
 
