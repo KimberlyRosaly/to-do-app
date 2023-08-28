@@ -105,13 +105,52 @@ E L E M E N T | C L A S S | I D  ATTRIBUTES
 .to-do-list-form-container button {
   background-color: pink;
 }
+
+.completed {
+  text-decoration: line-through;
+}
 /* ___________________________________________ */
                              /* SVG VIDEO GAME */
 .svg-container {
   background-color: rgba(0, 0, 0, 0.501);
- 
-
 }
+
+
+.tree-svg {
+  animation: glowing 2s ease-in-out infinite;
+}
+
+@keyframes glowing {
+  0% {
+    /* box-shadow: 0 0 5px 3px rgba(255, 165, 0, 0.8); */
+    stroke-width: 5px;
+    stroke: rgba(255, 165, 0, 0.8);
+    fill: none;
+  }
+  50% {
+    /* box-shadow: 0 0 15px 10px rgba(255, 165, 0, 0.6); */
+    stroke-width: 15px;
+    stroke: rgba(255, 165, 0, 0.5);
+    fill: none;
+  }
+  100% {
+    /* box-shadow: 0 0 5px 3px rgba(255, 165, 0, 0.8); */
+    stroke-width: 5px;
+    stroke: rgba(255, 165, 0, 0.8);
+    fill: none;
+  }
+}
+
+.tree-svg-art {
+    stroke-width: 5px;
+}
+
+
+
+
+
+
+
 /* ___________________________________________ */
                      /* USER SIGN UP AND LOGIN */
 #portal {

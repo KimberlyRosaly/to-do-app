@@ -22,7 +22,7 @@ const Tree = () => {
  </g>
   <g>
   <title>TREE ART LAYER</title>
-  <g id="svg_1">
+  <g class="tree-svg-art" id="svg_1">
    <rect fill="#663400" x="89.97972" y="86.99999" width="13.99999" height="157" id="svg_4" stroke="#000" stroke-dasharray="5,5"/>
    <rect fill="#236600" x="54.97972" y="5" width="87" height="46" id="svg_5" stroke="#000" stroke-dasharray="5,5"/>
    <rect fill="#236600" x="9.97972" y="58" width="87" height="71" id="svg_2" stroke="#000" stroke-dasharray="5,5"/>
@@ -40,7 +40,7 @@ const Tree = () => {
 
 export default function SVGVideoGame() {
     return(<div>   
-            <svg width="200" height="250" xmlns="http://www.w3.org/2000/svg">           
+            <svg className="svg-container" width="200" height="250" xmlns="http://www.w3.org/2000/svg">           
                 <Tree />
             </svg>
         </div>);

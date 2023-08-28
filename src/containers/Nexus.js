@@ -9,10 +9,10 @@ export default function Nexus() {
     return(<>
         <Navigation />
         <h1>NEXUS COMPONENT</h1>
-        <SVGVidgeoGame />
         {/* <VideoGame /> */}
         {/* <CanvasVideoGame /> */}
         <ToDoForm />
+        <SVGVidgeoGame />
 
     </>)
 };
