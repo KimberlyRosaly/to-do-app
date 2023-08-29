@@ -62,9 +62,9 @@ const handleCheckboxChange = (index) => {
                 <div>
                     APPEND TO DOs HERE | RESET UPON REFRESH
                     <hr />
-                    {toDos.map((entry, iterator) => (
-                            <div key={iterator} className={completedItems.includes(iterator) ? 'completed' : ''}>
-                                <input type="checkbox" onChange={() => handleCheckboxChange(iterator)} />
+                    {toDos.map((entry, index) => (
+                            <div key={index} className={completedItems.includes(index) ? 'completed' : ''}>
+                                <input type="checkbox" onChange={() => handleCheckboxChange(index)} />
                                 <br />
                                 {entry}
                                 <hr/>

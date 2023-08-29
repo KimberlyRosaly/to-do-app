@@ -11,8 +11,10 @@ export default function Nexus() {
         <h1>NEXUS COMPONENT</h1>
         {/* <VideoGame /> */}
         {/* <CanvasVideoGame /> */}
-        <ToDoForm />
-        <SVGVidgeoGame />
+        <div style={{display: "flex"}}>
+            <ToDoForm />
+            <SVGVidgeoGame />
+        </div>
 
     </>)
 };

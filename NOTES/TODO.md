@@ -1,17 +1,25 @@
 T O D O
 
-[X](1) SUNSET BACKGROUND GRADIENT
 
-[X](2) FORM ON NEXUS > SUBMIT BUTTON APPENDS INPUT BOX VALUE TO THE DOM
 
-[x](3) TODO ENTRIES > CHECKBOX NEXT TO EACH LIST ITEM
 
-                                        ------T O G G L E
-[](4) CHECKBOX > TICKED = LIST ITEM IS CROSSED OUT
 
-[](5) CHECKBOX > UNTICKED = LIST ITEM IS NOT CROSSED OUT
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ____________________________________---------------------
+                                    WHAT DATA SHOULD LOOK LIKE
 toDos = [
         {id: 1, "abcdefg"},
         {id: 2, "hijklmn"}
@@ -31,14 +39,22 @@ handleCheckboxChange(){
 [x] create event handler function
     > handleCheckboxChange
         >
-x] modify mapping of 'toDo' array 
+[x] modify mapping of 'toDo' array 
     > apply CSS class 
         > completedItems state
         > checkboxes get onClick event handler
 
 
+svg resolutions (truly scalable? or do I need them in 100x200 start with for quality? define quality dimensions
+
+define quality comparisons
+define quality selection
+
+reiterate stickers to have uniform size)        
+
+
 - - - - - - - - - B I G   G O A L S   A N D   D R E A M S
-[]list item has check mark that toggles being crossed off
+[X]list item has check mark that toggles being crossed off
 []checked list item displays an image in the videogame container
 []multiple checked items display multiple images
 []unticking list item removes image from DOM
@@ -55,11 +71,48 @@ TO DO ITEM CROSSED OFF
         -ANIMATION > HAND SVG > SWEEPS FROM LEFT SIDE OF SCREEN INTO VIDEOGAME CONTAINER
             HAND SVG LAYERED ON TOP OF STICKER
         -STICKER IS DISPLAYED INSIDE OF THE VG CONTAINER                
-
-[]()
-
-
-
+-----------------------------------------------------------
 PURPOSE OF APPLICATION
     EARN STICKER FOR EACH TO-DO ITEM COMPLETED
     ALL EARNED STICKERS ARE RENDERED ONTO THE DOM
+
+MODE(S)
+    STICKER BOOK COLLECTION
+    BUILD AN ISLAND GETAWAY
+
+POSSIBLE SCENES
+    ISLAND GETAWAY
+    SUNSET BACKGROUND GRADIENT
+        BODY OF BLUE WATER
+        LIGHT BROWN ISLAND
+        PALM TREE
+        SUN SETTING
+        MOON
+        STARS
+    BODY OF WATER : MOVE LEFT - RIGHT - LEFT || GROW & SHRINK
+
+    STICKER BOOK COLLECTION
+    BACKGROUND LOOKS LIKE NOTEPAD
+    FLEX CONTAINER
+        TREE
+        HEART
+        STAR
+        MOON
+-----------------------------------------------------------
+
+() SCENE CAN BE PREBUILT
+    EACH STICKER 'DISPLAY: TRUE' OR FALSE
+    STICKERS DEFAULT = 'DISPLAY: FALSE'
+    COMPLETION STATUS TRIGGERS STICKER DISPLAY TOGGLE [A,B,C] 
+    A.COMPLETE ? As.DISPLAY: 
+
+C O M P L E T E D
+
+[X](1) SUNSET BACKGROUND GRADIENT
+[X](2) FORM ON NEXUS > SUBMIT BUTTON APPENDS INPUT BOX VALUE TO THE DOM
+[x](3) TODO ENTRIES > CHECKBOX NEXT TO EACH LIST ITEM
+                                        ------T O G G L E
+[x](4) CHECKBOX > TICKED = LIST ITEM IS CROSSED OUT
+[x](5) CHECKBOX > UNTICKED = LIST ITEM IS NOT CROSSED OUT
+                                        ------T O G G L E
+

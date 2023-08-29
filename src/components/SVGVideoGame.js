@@ -1,5 +1,6 @@
 // ________________________________________IMPORTs
 import React from 'react'
+import SVGMoon from '../components/stickers/SVGMoon'
 // ________________________________________IMPORTend
 
 // SVG TREE
@@ -43,5 +44,7 @@ export default function SVGVideoGame() {
             <svg className="svg-container" width="200" height="250" xmlns="http://www.w3.org/2000/svg">           
                 <Tree />
             </svg>
+
+            <SVGMoon />
         </div>);
 }
