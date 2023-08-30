@@ -21,12 +21,6 @@ body{
 
   background-size: cover;
   background-repeat: no-repeat; */
-
-
-
-
-
-
   
   /* REMOVE SCROLLBARS */
   overflow-x: hidden;  
@@ -41,11 +35,6 @@ body{
 
 .App {
   font-family: 'Courier New', Courier, monospace;
-  /* ___________________________________________ */
-  /* FOR ELEMENTAL VISIBILITY | TESTING PURPOSES */
-  /* ADD ORANGE BOARDER AROUND ELEMENT */
-  border: 5px solid orange;
-  /* ___________________________________________ */
 }
 /* 
 - - - - - - C S S   S Y N T A X - - - - - - - -
@@ -83,8 +72,8 @@ E L E M E N T | C L A S S | I D  ATTRIBUTES
                             /* TO-DO LIST FORM */
 /* CLASS SELECTOR */
 .to-do-list-form-container {
-  margin: 10%;
-  padding: 5%;
+  margin: 0;
+  padding: 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -100,7 +89,7 @@ E L E M E N T | C L A S S | I D  ATTRIBUTES
   /* background-color: yellow; */
 }
 .to-do-list-form-container input {
-  background-color: orange;
+  
 }
 .to-do-list-form-container button {
   background-color: pink;
@@ -111,8 +100,25 @@ E L E M E N T | C L A S S | I D  ATTRIBUTES
 }
 /* ___________________________________________ */
                              /* SVG VIDEO GAME */
-.svg-container {
-  background-color: rgba(0, 0, 0, 0.501);
+.svg-container { 
+
+
+  border: 5px solid black;
+  margin: 10px;
+  padding: 10px;
+  /* background: linear-gradient(25deg, #150650, #4c3399, #f0ede5); */
+  /* background-color: rgba(13, 7, 128, 0.501); */
+  background-image: 
+    linear-gradient(45deg,
+    rgba(51, 45, 45, 0.9), 
+    rgb(9, 67, 58), 
+    rgba(9, 21, 83, 0.9)), 
+    url('https://i.ibb.co/S65pWDV/pixels-holographic-25opac.png');
+
+  background-blend-mode: color-burn;
+
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 

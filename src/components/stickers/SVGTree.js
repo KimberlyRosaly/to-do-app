@@ -1,3 +1,6 @@
+// HOW TO IMPORT :
+// import { SVGTree } from '../components/stickers/SVGTree'
+// ARROW FUNCTIONS IMPORT WITH '{}' | NAMED FUNCTIONS IMPORT WITHOUT
 export const SVGTree = () => {
     return (<> 
     <svg>
