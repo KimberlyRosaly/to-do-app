@@ -98,6 +98,19 @@ E L E M E N T | C L A S S | I D  ATTRIBUTES
 .completed {
   text-decoration: line-through;
 }
+
+.to-do-list-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.to-do-list-container div {
+  border: dashed 4px black;
+  padding: 10px;
+  margin: 10px;
+}
 /* ___________________________________________ */
                              /* SVG VIDEO GAME */
 .svg-container { 
