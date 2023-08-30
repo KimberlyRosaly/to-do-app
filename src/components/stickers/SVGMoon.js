@@ -3,7 +3,7 @@ import React from 'react'
 export default function SVGMoon() {
 // const SVGMoon = () => {
     return(
-        <svg width="110" height="115" xmlns="http://www.w3.org/2000/svg">
+        <svg width="110" height="115" transform="translate(0,-50)">
             <g>
             <title>GLOWING BACKGROUND LAYER</title>
             <g class="tree-svg" id="svg_21" >
@@ -31,7 +31,7 @@ export default function SVGMoon() {
             
             <g>
             <title>MOON ART LAYER</title>
-            <g stroke="null" id="svg_21" stroke-width="4">
+            <g stroke-width="4">
             <path stroke="#000" fill="#ffffaa" d="m2.05377,42.64687l14.16818,-24.5382l24.5382,-14.16818l28.33637,0l24.53821,14.16818l14.16818,24.5382l0,28.33636l-14.16818,24.5382l-24.53821,14.16817l-28.33637,0l-24.5382,-14.16817l-14.16818,-24.5382l33.45771,18.06748l24.35014,-8.24331l11.93261,-16.82393l-1.4336,-29.93737c-3.9916,-3.87929 -7.98319,-7.75858 -11.97479,-11.63788l-27.32274,0.16845l-29.00933,20.07021l0,-0.00001z" id="svg_7" stroke-dasharray="5,5"/>
             <path stroke="#000" id="svg_2" d="m47.60582,13.20335l1.02688,-4.10187l4.15758,-1.82551l4.15758,1.82551l1.0269,4.10187l-2.87722,3.28947l-4.61453,0l-2.8772,-3.28947l0.00001,0z" stroke-dasharray="5,5" fill="#636317"/>
             <path stroke="#000" id="svg_3" d="m65.48883,20.53997l0.98124,-4.10187l3.9728,-1.82551l3.9728,1.82551l0.98126,4.10187l-2.74934,3.28947l-4.40944,0l-2.74932,-3.28947z" stroke-dasharray="5,5" fill="#636317"/>

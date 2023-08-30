@@ -102,10 +102,11 @@ E L E M E N T | C L A S S | I D  ATTRIBUTES
                              /* SVG VIDEO GAME */
 .svg-container { 
 
-
+  min-width: 50%;
+/* height: fit-content; */
   border: 5px solid black;
-  margin: 10px;
-  padding: 10px;
+  /* margin: 10px; */
+  /* padding: 10px; */
   /* background: linear-gradient(25deg, #150650, #4c3399, #f0ede5); */
   /* background-color: rgba(13, 7, 128, 0.501); */
   background-image: 
@@ -124,6 +125,11 @@ E L E M E N T | C L A S S | I D  ATTRIBUTES
 
 .tree-svg {
   animation: glowing 2s ease-in-out infinite;
+  /* transform: scale(0.5); */
+}
+.tree-svg-art {
+    stroke-width: 3px;
+    /* transform: scale(0.5); */
 }
 
 @keyframes glowing {
@@ -147,9 +153,6 @@ E L E M E N T | C L A S S | I D  ATTRIBUTES
   }
 }
 
-.tree-svg-art {
-    stroke-width: 5px;
-}
 
 
 

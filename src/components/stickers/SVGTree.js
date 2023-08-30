@@ -3,7 +3,7 @@
 // ARROW FUNCTIONS IMPORT WITH '{}' | NAMED FUNCTIONS IMPORT WITHOUT
 export const SVGTree = () => {
     return (<> 
-    <svg>
+    <svg width="200" height="250" transform="scale(0.8)">
  <g>
     <title>GLOWING BACKGROUND LAYER</title>
     <g class="tree-svg">
