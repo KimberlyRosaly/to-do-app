@@ -3,7 +3,7 @@ import React from 'react'
 export default function SVGMoon() {
 // const SVGMoon = () => {
     return(
-        <svg width="110" height="115" transform="translate(0,-75)">
+        <svg width="110" height="115" transform="translate(0,0)">
             <g>
             <title>GLOWING BACKGROUND LAYER</title>
             <g class="tree-svg" id="svg_21" >
