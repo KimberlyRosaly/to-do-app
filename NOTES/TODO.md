@@ -1,4 +1,42 @@
 T O D O
+--------------------------------
+BUILD AN ENTIRE SCENE VIA STEPS
+(1) background / scene
+(2) tree 
+(3) moon
+LEVERAGE VIA {STATE} 
+& CSS 'DISPLAY:NONE' PROPERTY
+--------------------------------
+
+FLAG : container default
+    stickers.all.display = 'none'
+
+to do list item submitted and appended to DOM
+to do list item checkbox is ticked
+to do list item is crossed out
+IF completedItems >= 1
+    completedItems.count()
+    stickers.map((s,i) sticker.display = true)
+
+
+to do list item properties
+    -entry
+    -ID number
+    -'completed' class value
+    
+
+sticker properties
+    -ID number
+
+
+scene :
+    background (image, cover)
+    stickers (svg)
+    tree = ID #1
+    moon = ID #2
+
+const stickers = [{1: "SVGMoon", 2: "SVGTree"}]
+stickers[0][1] //=> "SVGMoon"
 
 
 
