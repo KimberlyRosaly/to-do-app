@@ -60,17 +60,22 @@ const handleCheckboxChange = (index) => {
                 {/* ============================================================== */}
                 {/* ============================================= L I S T ======== */}
                 <div>
-                    APPEND TO DOs HERE | RESET UPON REFRESH
+                    <h4>TO DO LIST</h4>
                     <hr />
-                    {toDos.map((entry, index) => (
-                            <div key={index} className={completedItems.includes(index) ? 'completed' : ''}>
-                                <input type="checkbox" onChange={() => handleCheckboxChange(index)} />
-                                <br />
-                                {entry}
-                                <hr/>
-                            </div>
-                        )                        
-                    )}
+                    <div class="to-do-list-container">
+                        {toDos.map((entry, index) => (
+                                <div key={index} className={completedItems.includes(index) ? 'completed' : ''}>
+                                    <input type="checkbox" onChange={() => handleCheckboxChange(index)} />
+                                    <br />
+                                    <hr />
+                                    {entry}
+                                    <hr />
+                                    
+                                </div>
+                            )                        
+                        )}
+                    </div>
+                    < hr/>
                 </div>
                 {/* ============================================================== */}
 
