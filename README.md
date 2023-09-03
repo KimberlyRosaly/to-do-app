@@ -2,6 +2,9 @@
 <pre><h1 align="center">to-do-app</h1></pre>
 <pre><h4 align="center">an application for productivity<br />a hub for personal growth</h4></pre>
 <hr />  
+
+<p align="center"><img src="https://i.ibb.co/b2Z2v2M/hih-mvp-demo-screenshot-v1.png" width="75%" /></p>
+<hr />
 <!-- ----------------------------------------------------------------------PURPOSE -->
 <h2 style="letter-spacing: 3px;" align="right" >
 PURPOSE</h2>
