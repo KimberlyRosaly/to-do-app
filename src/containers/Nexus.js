@@ -1,18 +1,18 @@
 import React from 'react'
 import Navigation from '../components/Navigation'
 import ToDoForm from '../components/forms/ToDoForm'
-// import VideoGame from '../components/VideoGame'
-// import CanvasVideoGame from '../components/CanvasVideoGame'
-import SVGVidgeoGame from '../components/SVGVideoGame'
+import { SpaceIsland } from '../components/scenes/SpaceIsland'
+import { Footer } from "../components/Footer";
 
 export default function Nexus() {
     return(<>
         <Navigation />
-        <h1>NEXUS COMPONENT</h1>
-        <div style={{display: "flex"}}>
+        <h1>-productivity hub-</h1>
+        <h2>[TO-DO LIST]</h2>
+        <div style={{display: "flex", width: "100vw"}}>
             <ToDoForm />
-            <SVGVidgeoGame />
+            <SpaceIsland />
         </div>
-
+        <Footer />
     </>)
 };
