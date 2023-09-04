@@ -90,7 +90,16 @@ nav ul li {
   color: black;
   text-decoration: none !important;
 }
-
+/* ___________________________________________ */
+/* ___________________________________________ */
+                                     /* FOOTER */
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 15px;
+  text-align: center;
+}
 /* ___________________________________________ */
 /* ___________________________________________ */
                             /* TO-DO LIST FORM */
@@ -119,6 +128,7 @@ nav ul li {
   font-family: 'Silkscreen';
   border: solid 4px black;
   background-color: pink;
+  padding: 0.5rem;
 }
 
 .completed {
@@ -130,6 +140,9 @@ nav ul li {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+
+  border: dashed 4px black;
+  min-height: 15px;
 }
 
 .to-do-list-container div {
