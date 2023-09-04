@@ -1,4 +1,53 @@
 T O D O
+================================================
+================================================
+[x] footer of warmth
+[] footer has z-index > bring element to back
+[x] todo index box has border [x] remove <hr>'s
+[] define stroke logic 
+    (a) art 
+        ()no stroke in component
+        ()stroke applied via CSS class/ID
+    (b) art double (background layer)
+        ()no stroke in component
+        ()glow applied via CSS class/ID
+            ()border?
+            ()keyframes > opacity?
+
+Take a gander and consider some logic..
+
+    scene contains 4 elements (island, tree, moon, star)
+
+
+
+frontend goals :
+    [] svg group > animation transition
+        [] on mount > "POP!"
+            [] scale the image small to full-size
+            [] animation is smooth and pleasing to the eye 
+            [] glowing border
+            [] glowing border pulses
+
+        [] on unMount > "GHOST!"
+            [] fade away slowly
+
+
+================================================
+================================================
+
+Take a break from nav CSS
+    debugging crashy VM is headachy
+Take a break from stickers and todos logic
+    abstracting logic is making me nervous
+
+[x]Spend some time with your creative side - being an artist..
+    make some svg stickers!
+        [/]space island (dirt, sand, moss)
+        [/]star pals (2 stars, smiles)
+    []follow along a bit w/ vector graphics kindle book
+
+
+[]make a 'resources' folder
 --------------------------------
 BUILD AN ENTIRE SCENE VIA STEPS
 (1) background / scene
