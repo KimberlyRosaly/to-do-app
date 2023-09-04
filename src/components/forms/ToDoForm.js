@@ -39,7 +39,7 @@ const handleCheckboxChange = (index) => {
 // __________________________________________________
 
     return(
-                <div>        
+                <div className="to-do-side">        
                 {/* ============================================= F O R M ======== */}
                     <div className="to-do-list-form-container">        
                         {/* TEXT : USER INSTRUCTIONS : CONTEXT DESCRIPTION */}
