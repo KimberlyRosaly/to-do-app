@@ -153,10 +153,10 @@ nav ul li {
 /* ___________________________________________ */
                              /* SVG VIDEO GAME */
 .svg-container { 
-  width: 100%;
+  width: 99%;
   /* min-width: 50%; */
 /* height: fit-content; */
-  border: 5px solid black;
+  border: 10px solid black;
   /* margin: 10px; */
   /* padding: 10px; */
   /* background: linear-gradient(25deg, #150650, #4c3399, #f0ede5); */
@@ -176,14 +176,66 @@ nav ul li {
 
 /* =============================================================== */
 /* =============================================================== */
-                                            /* SPACE ISLAND SCENE */
-#space-island-moon-background {
-
-}
+/* SPACE ISLAND SCENE */
 #space-island-moon-art {
   stroke-width: 5;
   stroke: black;
+  stroke-dasharray: 3;
+}
+#space-island-moon-background {
+  animation: glowing 2s ease-in-out infinite;
+}
+
+#space-island-island-art {
+  stroke-width: 5;
+  stroke: black;
+  stroke-dasharray: 3;
+}
+#space-island-island-background {
+  animation: glowing 2s ease-in-out infinite;
+}
+
+#space-island-star-art {
+  stroke-width: 5;
+  stroke: black;
+  stroke-dasharray: 3;
+}
+#space-island-star-background {
+  animation: glowing 2s ease-in-out infinite;
+}
+
+#space-island-tree-art {
+  stroke-width: 5;
+  stroke: black;
   stroke-dasharray: 4;
+}
+#space-island-tree-background {
+  animation: glowing 2s ease-in-out infinite;
+}
+
+@keyframes glowing {
+  0% {
+    stroke-width: 5px;
+    stroke: rgba(255, 165, 0, 0.8);
+    fill: none;
+  }
+  50% {
+    box-shadow: 0 0 15px 10px rgba(255, 165, 0, 0.6);
+    stroke-width: 20px;
+    stroke: rgba(255, 165, 0, 0.5);
+    fill: none;
+  }
+  75% {
+    box-shadow: 0 0 15px 10px rgba(255, 165, 0, 0.3);
+    stroke-width: 2px;
+    stroke: rgba(255, 165, 0, 0.5);
+    fill: none;
+  }
+  100% {
+    stroke-width: 10px;
+    stroke: rgba(255, 165, 0, 0.8);
+    fill: none;
+  }
 }
 /* =============================================================== */
 

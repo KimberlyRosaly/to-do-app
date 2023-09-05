@@ -4,15 +4,15 @@ T O D O
 [x] footer of warmth
 [] footer has z-index > bring element to back
 [x] todo index box has border [x] remove <hr>'s
-[] define stroke logic 
+[x] define stroke logic 
     (a) art 
-        ()no stroke in component
-        ()stroke applied via CSS class/ID
+        (x)no stroke in component
+        (x)stroke applied via CSS class/ID
     (b) art double (background layer)
-        ()no stroke in component
-        ()glow applied via CSS class/ID
-            ()border?
-            ()keyframes > opacity?
+        (x)no stroke in component
+        (x)glow applied via CSS class/ID
+            (x)border?
+            (x)keyframes > opacity?
 
 Take a gander and consider some logic..
 
