@@ -80,3 +80,8 @@ const handleCheckboxChange = (index) => {
                 </div>
     )
 };
+
+
+
+// STATE MUST BE ABSTRACTED
+// BEGIN LOGIC
