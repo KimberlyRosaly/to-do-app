@@ -94,6 +94,9 @@ nav ul li {
 /* ___________________________________________ */
                                      /* FOOTER */
 .footer {
+  z-index: -1; 
+  /* Set a negative value to 
+  place it at the very background */
   position: fixed;
   bottom: 0;
   width: 100%;
