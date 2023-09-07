@@ -1,6 +1,43 @@
 T O D O
 ================================================
 ================================================
+after today's interview..
+    focus more on full-stack!
+    show off more of your versatility in skill!
+
+    USER ACCOUNTS
+    SECURITY
+    COMMERCE
+
+"show me your greatest code achievement"
+[] 
+"show me a client's finished, deployed site."
+[]
+"show me backend work"
+[]
+
+
+ DREAM BIG, MY DEAR, BUT LET'S GET MOVING!
+ [] finish hih nexus
+ [] users | signin, login
+ [] donation page (commerce?) '/give'
+ [] deploy 
+================================================
+================================================
+
+GET CRACKIN' ON SOME BACKEND!
+
+[] USERS CAN SIGN UP FOR AN ACCOUNT
+[] USERS CAN SIGN IN
+[] DATA PERSISTS, EACH USER HAS THEIR OWN DATA
+[] USERS CANNOT SEE OTHER USERS' DATA
+
+BRANDING DEMOS - SHOW IT OFF!
+
+[] KRADEVCO FEATURES APPS
+
+================================================
+================================================
 [x] footer of warmth
 [] footer has z-index > bring element to back
 [x] todo index box has border [x] remove <hr>'s
