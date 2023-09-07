@@ -39,7 +39,7 @@ BRANDING DEMOS - SHOW IT OFF!
 ================================================
 ================================================
 [x] footer of warmth
-[] footer has z-index > bring element to back
+[x] footer has z-index > bring element to back
 [x] todo index box has border [x] remove <hr>'s
 [x] define stroke logic 
     (a) art 
