@@ -183,7 +183,7 @@ nav ul li {
 #space-island-moon-art {
   stroke-width: 5;
   stroke: black;
-  stroke-dasharray: 3;
+  stroke-dasharray: 4;
 }
 #space-island-moon-background {
   animation: glowing 2s ease-in-out infinite;
@@ -192,7 +192,7 @@ nav ul li {
 #space-island-island-art {
   stroke-width: 5;
   stroke: black;
-  stroke-dasharray: 3;
+  stroke-dasharray: 4;
 }
 #space-island-island-background {
   animation: glowing 2s ease-in-out infinite;
@@ -201,7 +201,7 @@ nav ul li {
 #space-island-star-art {
   stroke-width: 5;
   stroke: black;
-  stroke-dasharray: 3;
+  stroke-dasharray: 4;
 }
 #space-island-star-background {
   animation: glowing 2s ease-in-out infinite;
