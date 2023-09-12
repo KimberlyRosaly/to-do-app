@@ -3,7 +3,6 @@ import React from 'react'
 import { useState } from 'react'
 import { SpaceIslandMoon } from '../scenes/SpaceIslandMoon';
 // =======================================IMPORTSend
-
 export default function ToDoForm() {
 // -----------------------------------------S T A T E
 // DECLARE VARIABLE, DECLARE A FUNCTION TO SET VARIABLE'S VALUE
@@ -11,7 +10,6 @@ const [ toDos, setToDos ] = useState([]) // USE STATE TO SET A DEFAULT VALUE : E
 
 const [ completedItems, setCompletedItems ] = useState([]);
 // ------------------------------------------STATEend
-
 // __________________________________________________
 // COMMON CONVENTIONS FOR FORM HANDLING & SUBMISSION
 const handleSubmit = (e) => {
@@ -24,8 +22,6 @@ const handleSubmit = (e) => {
     setToDos([...toDos, inputFieldValue]);
     e.target.reset();
 };
-
-
 // __________________________________________________
 //                          CHECKBOX (e)VENT HANDLING
 const handleCheckboxChange = (index) => {
@@ -35,10 +31,8 @@ const handleCheckboxChange = (index) => {
     } else {
         setCompletedItems([...completedItems, index]);
     }
-
 };
 // __________________________________________________
-
     return(
                 <div className="to-do-side">        
                 {/* ============================================= F O R M ======== */}
@@ -65,6 +59,14 @@ const handleCheckboxChange = (index) => {
                     <div class="to-do-list-container">
                         {toDos.map((entry, index) => (
                                 <div key={index} className={completedItems.includes(index) ? 'completed' : ''}>
+{/* GIVE THIS ELEMENT A CLASS >
+    EXECUTE EXPRESSION TO DETERMINE VALUE FOR CLASSNAME
+        TAKE A LOOK AT THE 
+            COMPLETED ITEMS ARRAY (WHICH WAS CREATED IN VIA STATE!)
+                WHICH CONTAINS INTEGERS OF INDEXES > IDS >  OF 
+                THE TODO LIST ITEMS THAT HAVE TICKED CHECKBOXES
+                    CREATURED DURING MAPPING > INDEX INTEGER OF ORDER 
+                    )*/}
                                     <input type="checkbox" onChange={() => handleCheckboxChange(index)} />
                                     <br />
                                     <hr />
