@@ -56,7 +56,7 @@ const handleCheckboxChange = (index) => {
                 {/* ============================================= L I S T ======== */}
                 <div>
                     <h4>TO DO LIST</h4>
-                    <div class="to-do-list-container">
+                    <div className="to-do-list-container">
                         {toDos.map((entry, index) => (
                                 <div key={index} className={completedItems.includes(index) ? 'completed' : ''}>
 {/* GIVE THIS ELEMENT A CLASS >
