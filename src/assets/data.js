@@ -6,6 +6,10 @@ export const data = [
         {
             grave: "robber",
             lich: "king"
+        },
+        {
+            abcd: "efgh",
+            ijkl: "MNOP"
         }
 ]
 
