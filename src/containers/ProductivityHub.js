@@ -1,4 +1,5 @@
 import React from 'react'
+import { data } from '../assets/data'
 import ToDoForm from '../components/forms/ToDoForm'
 import { SpaceIsland } from '../components/scenes/SpaceIsland'
 

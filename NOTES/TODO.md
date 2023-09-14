@@ -1,4 +1,5 @@
 T O D O
+``
 ================================================
 ================================================
 after today's interview..
@@ -123,6 +124,12 @@ scene :
 
 const stickers = [{1: "SVGMoon", 2: "SVGTree"}]
 stickers[0][1] //=> "SVGMoon"
+
+<!-- - - - - - -  -->
+
+data.SpaceIsland
+data.SpaceIsland.moonArt
+data.SpaceIsland.moonBackground
 
 
 
