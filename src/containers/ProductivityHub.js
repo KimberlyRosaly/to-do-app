@@ -3,12 +3,12 @@ import React from 'react'
 import ToDoForm from '../components/forms/ToDoForm'
 import { SpaceIsland } from '../components/scenes/SpaceIsland'
 
-export default function ProductivityHub({data}) {
+export default function ProductivityHub({propsData}) {
     return(
         <section style={{display: "flex", width: "100vw"}}>
             <ToDoForm />
             <SpaceIsland />
-            {console.log(data, "Hello!")}
+            {console.log(propsData, "Hello!")}
         </section>
     )
 };
