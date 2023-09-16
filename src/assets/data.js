@@ -1,16 +1,10 @@
 export const data = [
         {
-            hello: "okay",
-            testing: "123"
+            id: 1,
+            entry: "123"
         },
-        {
-            grave: "robber",
-            lich: "king"
-        },
-        {
-            abcd: "efgh",
-            ijkl: "MNOP"
-        }
+        {id: 2, entry: "abcdefg hijk"},
+        {id: 3, entry: "be brave"}
 ]
 
 /*
