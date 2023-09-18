@@ -6,7 +6,7 @@ import { SpaceIslandMoon } from '../scenes/SpaceIslandMoon';
 export default function ToDoForm() {
 // -----------------------------------------S T A T E
 // DECLARE VARIABLE, DECLARE A FUNCTION TO SET VARIABLE'S VALUE
-const [ toDos, setToDos ] = useState([]) // USE STATE TO SET A DEFAULT VALUE : EMPTY ARRAY
+const [ toDos, setToDos ] = useState([]); // USE STATE TO SET A DEFAULT VALUE : EMPTY ARRAY
 
 const [ completedItems, setCompletedItems ] = useState([]);
 // ------------------------------------------STATEend
