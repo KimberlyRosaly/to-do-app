@@ -2,7 +2,8 @@ import React from 'react'
 // import { data } from '../assets/data'
 import ToDoForm from '../components/forms/ToDoForm'
 import { SpaceIsland } from '../components/scenes/SpaceIsland'
-// import { useState } from 'react'
+import { useState } from 'react'
+import ToDoIndex from '../components/forms/ToDoIndex'
 // -----------------------------------------S T A T E
 // const [sceneItems, setSceneItems] = useState([]);
 // sceneItems = [1,2,3,4,5] //=> ids of all scene items, in appearance order
@@ -14,12 +15,20 @@ import { SpaceIsland } from '../components/scenes/SpaceIsland'
 // ITERATE THROUGH SCENE ITEMS
 // DISPLAY:TRUE # SCENE ITEMS
 
+const [formData, setFormData] = useState('');
+const handleFormSubmit = (data) => {
+    setFormData(data);
+};
+
 // SAMPLE DATA PROVIDED VIA PROP HANDED IN WITHIN PARENT
 export default function ProductivityHub({todosData}) {
-    console.log(todosData, "TESTING 123");
     return(
-        <section style={{display: "flex", width: "100vw"}}>
-            <ToDoForm />
+        <section style={{display: "flex", width: "100vw"}}>            
+            <ToDoForm onSubmit={handleFormSubmit} />
+            <ToDoIndex 
+                sampleTodosData={todosData} 
+                submittedFormData={formData} 
+            />
             <SpaceIsland />
         </section>
     )
