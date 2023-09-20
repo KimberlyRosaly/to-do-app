@@ -3,7 +3,7 @@ import React from 'react'
 import { useState } from 'react'
 import { SpaceIslandMoon } from '../scenes/SpaceIslandMoon';
 // =======================================IMPORTSend
-export default function ToDoForm() {
+export default function ToDoForm({ onSubmit }) {
 // -----------------------------------------S T A T E
 // DECLARE VARIABLE, DECLARE A FUNCTION TO SET VARIABLE'S VALUE
 const [ toDos, setToDos ] = useState([]); // USE STATE TO SET A DEFAULT VALUE : EMPTY ARRAY
@@ -20,6 +20,7 @@ const handleSubmit = (e) => {
     console.log('Input Box Value:', inputFieldValue, e.target, e.target.name, toDos)
     // LEVERAGE STATE > TODO ARRAY - COPY ALL EXISTING VALUES AND ADD NEW ENTRY OF INPUT BOX STRING VALUE
     setToDos([...toDos, inputFieldValue]);
+    onSubmit(inputFieldValue);
     e.target.reset();
 };
 // __________________________________________________
