@@ -1,4 +1,4 @@
-export const SpaceIslandMoon = () => {
+const SpaceIslandMoon = () => {
     return (<>
          <g id="space-island-moon-background" transform="rotate(-11.5128, 245.993, 122.063)">
         <path d="m179.57834,128.81629l13.78559,-62.30568l20.98213,40.46066l34.73213,12.96065l30.45714,-11.71065l26.70713,-41.71066l12.53585,62.30568l-38.62578,49.96561l-61.94868,0l-38.62551,-49.96561z" fill="#e2b278" transform="rotate(-104.135, 249.178, 122.646)"/>
@@ -22,4 +22,4 @@ export const SpaceIslandMoon = () => {
     </g>
     </>)
 }
-      
+export default SpaceIslandMoon;

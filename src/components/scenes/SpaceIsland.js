@@ -1,6 +1,6 @@
 import React from 'react' 
 
-export const SpaceIsland = () => {
+const SpaceIsland = () => {
     return(     
         <div className="svg-container">   
         <svg width="350" height="400" xmlns="http://www.w3.org/2000/svg">
@@ -94,3 +94,4 @@ export const SpaceIsland = () => {
         </div>
     )
 }
+export default SpaceIsland;
