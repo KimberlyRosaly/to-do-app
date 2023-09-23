@@ -11,7 +11,8 @@ export default function Nexus() {
         <Navigation />
         <Heading />
         {/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-= */}
-        <ProductivityHub todosData={data} /> {/* AKA TO-DO LIST */}
+        <ProductivityHub todosData={data} /> 
+        {/* AKA TO-DO LIST */}
         {/* IMPORTED DATA OBJECTS 
                 HANDED TO CHILD COMPONENT
                         VIA PROPS */}

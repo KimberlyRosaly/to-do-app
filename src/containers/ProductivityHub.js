@@ -8,7 +8,7 @@ export default function ProductivityHub({todosData}) {
 
     return(
         <section style={{display: "flex", width: "100vw"}}>            
-            <ToDosIndex /> 
+            <ToDosIndex todosData={todosData} /> 
             <SpaceIsland />
         </section>
     )
