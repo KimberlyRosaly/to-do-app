@@ -7,15 +7,20 @@ P A R E N T  COMPONENT >
         NEXUS
           / 
     PRODUCTIVITY
-      H U B
-        /|\
-   FORM  |  INDEX
-       SCENE
+          H U B
+         /  |   \
+    FORM    |   INDEX
+    /|\    SCENE
+INFO | BUTTON
+   INPUT 
 
 
-
-
-
+INDEX : 
+{sceneItems.map((item, index) => (
+    <li key={index}>
+    DISPLAY THIS {item.moonArt}
+    </li>
+))}
 ================================================
 ================================================
 after today's interview..
