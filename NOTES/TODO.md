@@ -1,26 +1,97 @@
 T O D O
 ================================================
 ================================================
-STATE 
+S T A T E 
+TODOS : [{id:1, entry:"abcdefg"}, {id:2, entry:"HIJKLMNOP}]
+TODOSCOMPLETEDCOUNTER : 0-*
+SCENEITEMSCOUNTER : 4
+SCENEITEMSSHOWN : 0-4
+
+user inputs text into text box
+user hits submit button
+form sends data to hub parent'S state : TODOS < append to state object
+useEffect checks for changes in data > compare SCENEITEMSSHOW to SCENEITEMSCOUNTER & COUNT TODOS
+if todos.count > 0
+    check if any completed:true
+    count if any completed:true
+    if completed:true > 0 
+        if completed:true >= sceneitemsshown
+        1 >= 0 ? do something
+            switch case for specific instructions?
+            if COMPLETED = SHOWNITEMS : DO NOTHING (NULL)
+            if COMPLETED < SHOWNITEMS : DO SOMETHING
+            if COMPLETED > SHOWNITEMS : DO SOMETHING
+
+| C-[COMPLETED ITEMS] | S-[SHOWN ITEMS] |
+C: 0 | S: 0
+    NULL
+C: 1 | S: 0
+    go into scene and display item no.1
+    {scene} > .find > id[1] > display:true
+C: 1 | S: 1
+    NULL
+C: 1 | S: 2
+    {scene}.find( id[1] ).display = TRUE
+    {scene}.find( id[2] ).display = FALSE
+C: 2 | S: 0
+    {scene}.find( id[1] ).display = TRUE
+    {scene}.find( id[2] ).display = TRUE
+C: 2 | S: 1
+    {scene}.find( id[1] ).display = TRUE
+C: 2 | S: 2
+    NULL
+C: 2 | S: 3
+    {scene}.find( id[1] ).display = TRUE
+    {scene}.find( id[2] ).display = TRUE
+    {scene}.find( id[3] ).display = FALSE
+
+
+if C is greater than S 
+    and C is less than or equal to S
+
+
+USER TICKS CHECK BOX OF TO DO LIST ITEM DISPLAYED ON INDEX
+[X]
+
+
+
+
 
 P A R E N T  COMPONENT > 
         NEXUS
           / 
     PRODUCTIVITY
-          H U B
-         /  |   \
-    FORM    |   INDEX
-    /|\    SCENE
+          H U B ________ STATE __ SCENEITEMSCOUNT = 4 {1: "MOON", ETC.}
+         /  |   \           | \
+    FORM    |   INDEX       |  COUNTER
+    /|\     |             TODOS
 INFO | BUTTON
-   INPUT 
-
+   INPUT    |
+            |
+          SCENE
 
 INDEX : 
+ITERATE OVER DATA | DISPLAY ALL TODOS
 {sceneItems.map((item, index) => (
     <li key={index}>
     DISPLAY THIS {item.moonArt}
     </li>
 ))}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ================================================
 ================================================
 after today's interview..
