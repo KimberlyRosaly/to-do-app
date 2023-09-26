@@ -5,8 +5,8 @@ import SpaceIsland from '../components/scenes/SpaceIsland.js'
 export default function ProductivityHub({todosData}) {
 const [completedItems, setCompletedItems] = useState([]);
 // Callback function > update completed items
-const updateCompletedItems = (newCompletedItems) => {
-    setCompletedItems(newCompletedItems);
+const updateCompletedItems = (i) => {
+    setCompletedItems(i);
 };
     return(
         <section style={{display: "flex", width: "100vw"}}>            
