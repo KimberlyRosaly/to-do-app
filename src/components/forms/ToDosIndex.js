@@ -1,15 +1,23 @@
 import React, { useState } from 'react';
+// PROPS HANDED IN VIA PARENT | data object, state object, setter function 
+export default function ToDosIndex({todosData, completedItems, updateCompletedItems}){
+// EVENT HANDLER | CHECKBOX TICK / UNTICK [X] []
+const handleCheckboxChange = (listItemID) => {
+    // CONDITION | STATE:COMPLETED=ID[1,2,3] CONTAINS ID[9].DOM ELEMENT GRAB
+    if (completedItems.includes(listItemID)) {
 
-export default function ToDosIndex({todosData}){
+        const newCompletedItems = completedItems.filter((completedItemID) => completedItemID !== listItemID);
 
-const [ completedItems, setCompletedItems ] = useState([]);
+        updateCompletedItems(newCompletedItems); //send an updated value TO THE PARENT!!!
 
-const handleCheckboxChange = (id) => {
-    if (completedItems.includes(id)) {
-        setCompletedItems(completedItems.filter((item) => item !== id));
     } else {
-        setCompletedItems([...completedItems, id]);
+
+        const newCompletedItems = [...completedItems, listItemID];
+
+        updateCompletedItems(newCompletedItems);
+
     }
+
 };
     return (
         <section>
