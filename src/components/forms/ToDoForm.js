@@ -1,5 +1,6 @@
 import React, { useState } from 'react'; 
 
+
 export default function ToDoForm({ onSubmit }) {
 // -----------------------------------------S T A T E
 // ------------------------------------------STATEend
@@ -7,12 +8,12 @@ export default function ToDoForm({ onSubmit }) {
 // COMMON CONVENTIONS FOR FORM HANDLING & SUBMISSION
 const handleSubmit = (e) => {
     e.preventDefault();
-    // GRAB VALUE OFF DOM``
-    // 'name' PROPERTY OF TARGET ELEMENT
-    const inputFieldValue = e.target.name.value 
+    const inputFieldValue = e.target.name.value;
     onSubmit(inputFieldValue);
+    console.log(inputFieldValue);
     e.target.reset();
-};
+  }
+  
 // __________________________________________________
 //                          CHECKBOX (e)VENT HANDLING
 
