@@ -30,7 +30,7 @@ const handleCheckboxChange = (listItemID) => {
                                 <br /><hr />{todo.entry}<hr />
                             </div>
                         ))}
-                    </div>               
+                    </div>
                 {/* ============================================================== */}
         </section>
     )

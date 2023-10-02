@@ -1,21 +1,31 @@
 import React, { useState } from 'react';
+import ToDoForm from '../components/forms/ToDoForm';
 import ToDosIndex from '../components/forms/ToDosIndex'
 import SpaceIsland from '../components/scenes/SpaceIsland.js'
 
-export default function ProductivityHub({todosData}) {
+export default function ProductivityHub({ todosData }) {
+
+    // |---CALLBACK FUNCTIONS
+    // | - - - - - - - - - - - - - - - - F O R M 
+const [formData, setFormData] = useState('');
+const handleFormSubmit = (newTodoEntry) => {
+    console.log("\n (1) PRODUCTIVITY HUB: \n TODO FORM ONSUBMIT CALLBACK FN \n ", newTodoEntry);
+    const updatedTodosData = [...todosData, { id: todosData.length +1, entry: newTodoEntry }];
+    setFormData(newTodoEntry);
+    console.log("(2) UPDATED STATE OBJECT \n formData: \n", formData)
+}
+
+    // |--- - - - - - - - - - - - - - - - C H E C K  oFF TODO
 const [completedItems, setCompletedItems] = useState([]);
-// Callback function > update completed items
-// parent prop passing to this child here
-// child passes back updated 'completedItems' whenever an item is toggled
-// THIS SEEMS TO BE ACCESSING THE SETTER DEFINED IN HERE | HAND IT SOME VALUE SOMEHOW...HOW DOES NEWCOMITEM EXIST?
-// PROP CALLS FUNCTION > FUNCTION CALLS SETTER > SETTER IS HANDED A NEW VALUE
-// SETTER MAKES COMPLETEDITEMS REFLECT NEW VALUE IN ARGUMENT
-const updateCompletedItems = (newCompletedItems) => {
-    setCompletedItems(newCompletedItems);
-};
+const updateCompletedItems = (newCompletedItems) => {setCompletedItems(newCompletedItems)};
+
     return(
-        <section style={{display: "flex", width: "100vw"}}>            
-            <ToDosIndex todosData={todosData} completedItems={completedItems} updateCompletedItems={updateCompletedItems} /> 
+        <section style={{display: "flex", width: "100vw"}}>    
+        <div>
+            <ToDoForm onSubmit={handleFormSubmit} />        
+            <ToDosIndex todosData={updatedTodosData} completedItems={completedItems} updateCompletedItems={updateCompletedItems} />
+
+        </div>
             <SpaceIsland />
         </section>
     )
