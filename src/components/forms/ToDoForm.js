@@ -8,9 +8,9 @@ export default function ToDoForm({ onSubmit }) {
 // COMMON CONVENTIONS FOR FORM HANDLING & SUBMISSION
 const handleSubmit = (e) => {
     e.preventDefault();
-    const inputFieldValue = e.target.name.value;
+    const inputFieldValue = e.target.elements.todoInputField.value;
     onSubmit(inputFieldValue);
-    console.log(inputFieldValue);
+    console.log("\n FORM SUBMIT BUTTON \n EVENT HANDLER SCOPE: \n const inputFieldValue=\n", inputFieldValue);
     e.target.reset();
   }
   
@@ -28,10 +28,10 @@ const handleSubmit = (e) => {
                         WHEN FORM SUBMISSION BUTTON PRESSED > DEFINED FUNCTION
                         BUTTON CLICK (e)VENT HANDED TO FUNCTION */}
                         <form onSubmit={handleSubmit}>
-                            {/* TEXT INPUT BOX */}
+                            {/* [[[[ [[[[[[[[ TEXT INPUT BOX ]]]]] ]]]]]]]]]]] */}
                             <label>To Do List Item
                                 {/* SET ATTRIBUTES TO HELP UNIQUELY IDENTIFY DOM ELEMENT ON PAGE */}
-                                <input type="text" name="name" />
+                                <input type="text" name="todoInputField" />
                             </label>
                             {/* SUBMIT BUTTON */}
                             <button type="SUBMIT">SUBMIT VALUE</button>
