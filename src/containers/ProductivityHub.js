@@ -6,25 +6,29 @@ import SpaceIsland from '../components/scenes/SpaceIsland.js'
 export default function ProductivityHub({ todosData }) {
 
     // |---CALLBACK FUNCTIONS
+    const [formData, setFormData] = useState('');
+    const [completedItems, setCompletedItems] = useState([]);
+    const [todosDataState, setTodosDataState] = useState(todosData);
+    
     // | - - - - - - - - - - - - - - - - F O R M 
-const [formData, setFormData] = useState('');
-const handleFormSubmit = (newTodoEntry) => {
-    console.log("\n (1) PRODUCTIVITY HUB: \n TODO FORM ONSUBMIT CALLBACK FN \n ", newTodoEntry);
-    const updatedTodosData = [...todosData, { id: todosData.length +1, entry: newTodoEntry }];
+    const handleFormSubmit = (newTodoEntry) => {
+    // console.log("\n (1) PRODUCTIVITY HUB: \n TODO FORM ONSUBMIT CALLBACK FN \n ", newTodoEntry);
+    const updatedTodosData = [...todosDataState, { id: todosDataState.length + 1, entry: newTodoEntry }];
     setFormData(newTodoEntry);
-    console.log("(2) UPDATED STATE OBJECT \n formData: \n", formData)
-}
+    setTodosDataState(updatedTodosData)
+    // console.log("(2) UPDATED STATE OBJECT \n formData: \n", formData)
+    }
 
     // |--- - - - - - - - - - - - - - - - C H E C K  oFF TODO
-const [completedItems, setCompletedItems] = useState([]);
-const updateCompletedItems = (newCompletedItems) => {setCompletedItems(newCompletedItems)};
+    const updateCompletedItems = (newCompletedItems) => {setCompletedItems(newCompletedItems)};
 
     return(
         <section style={{display: "flex", width: "100vw"}}>    
         <div>
             <ToDoForm onSubmit={handleFormSubmit} />        
-            <ToDosIndex todosData={updatedTodosData} completedItems={completedItems} updateCompletedItems={updateCompletedItems} />
-
+            <ToDosIndex todosData={todosDataState} 
+            completedItems={completedItems} 
+            updateCompletedItems={setCompletedItems} />
         </div>
             <SpaceIsland />
         </section>
