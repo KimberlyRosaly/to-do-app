@@ -1,6 +1,55 @@
 T O D O
 ================================================
 ================================================
+  // LET'S MAKE SOME P S E U D O C O D E !
+  // ::: GOAL : EACH CHECKED OFF TODO GENERATES A SINGLE STICKER
+  // check todos array [1 aaa 2 bbb 3 ccc]
+  // count how many objects exist [1,2,3].count = 3
+  // check stickers visible on DOM array [1 moo 2 boo]
+  // count how many objects exist [1,2].count = 2
+  // check scene recipe [1,2,3,4,5,6,7,8]
+  // recipe.map todos.count times
+  // map over the receipe / as many times as there are todos
+
+  todos index array = [1:3029320, 2:wkfjwkwjf]
+  todos index array completed = [2:completed:true]
+
+  completed count = 1
+
+  scene = [1:moon, 2:dog]
+  dom stickers displayed array = [1:display:true]
+
+  scene count = 2
+  dom stickers count = 1
+
+  # completed != # stickers ? 
+    completed count (1) 
+      GO THROUGH SVGS 
+      RENDER WITH EACH ITERATION
+  ===============================================================
+   order
+  1 moon
+  2 tree
+  3 planet thing
+  4 star
+
+  should they be their own COMPONENTS`
+  should they be an object FILE {}
+  benefits of rendering
+
+
+  ponies only render themselves and are in charge of their own logic
+  objects are reusable components
+
+  object.map ( o => svg that has matching ID)
+   <Sticker art="" backgroundArt=""
+
+================================================
+================================================
+
+
+
+
 S T A T E 
 TODOS : [{id:1, entry:"abcdefg"}, {id:2, entry:"HIJKLMNOP}]
 TODOSCOMPLETEDCOUNTER : 0-*
@@ -11,6 +60,9 @@ user inputs text into text box
 user hits submit button
 form sends data to hub parent'S state : TODOS < append to state object
 useEffect checks for changes in data > compare SCENEITEMSSHOW to SCENEITEMSCOUNTER & COUNT TODOS
+
+
+
 if todos.count > 0
     check if any completed:true
     count if any completed:true
