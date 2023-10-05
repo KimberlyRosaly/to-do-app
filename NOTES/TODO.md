@@ -26,6 +26,17 @@ T O D O
     completed count (1) 
       GO THROUGH SVGS 
       RENDER WITH EACH ITERATION
+
+scene = {id:1, name="moon" art="<svg><g>..", background="<g><svg>.."}
+object.map((o) => <Sticker art={o.art}..>)
+<Sticker art={} background={} display={}>
+
+
+
+
+
+
+
   ===============================================================
    order
   1 moon
