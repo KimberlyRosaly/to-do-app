@@ -27,9 +27,31 @@ T O D O
       GO THROUGH SVGS 
       RENDER WITH EACH ITERATION
 
+================================================
+================================================
+<!-- LET'S TRY TO MAKE PSUEDOCODE 
+                    LOOK MORE LIKE CODE!!! -->
 scene = {id:1, name="moon" art="<svg><g>..", background="<g><svg>.."}
 object.map((o) => <Sticker art={o.art}..>)
 <Sticker art={} background={} display={}>
+
+Keep It Simple, Stupid.
+"Reusability is the key to having value." :wink, wink:
+    K E Y..
+        V A L U E
+                   XD anyway..
+
+Sticker components render props
+CONTAINER : TOP-LEVEL / HIGH-LEVEL WITHIN APP
+            CONNECT TO DATA SOURCE
+RENDER CHILDREN
+            PASS DATA (PROPS) TO THEM
+            CONNECT TO DATA SOURCES
+            HANDLE USER INTERACTION
+            REPRESENT 'VIEWS' (like in MVC)
+PARENT : RENDER CHILDREN
+        DEFINE LAYOUT OF CHILDREN
+
 
 
 

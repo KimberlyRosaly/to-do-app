@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import ToDoForm from "../components/forms/ToDoForm";
 import ToDosIndex from "../components/forms/ToDosIndex";
 import SpaceIsland from "../components/scenes/SpaceIsland.js";
+import { Sticker } from "../components/Sticker";
+// import SVGMoon from "../components/stickers/SVGMoon";
 
 export default function ProductivityHub({ todosData }) {
 
@@ -40,6 +42,8 @@ export default function ProductivityHub({ todosData }) {
         />
       </div>
       <SpaceIsland />
+      {/* <Sticker art={} background={} display={} /> */}
+      {/* <SVGMoon style={{display:false;}} /> */}
     </section>
   );
 }
