@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import ToDoForm from "../components/forms/ToDoForm";
 import ToDosIndex from "../components/forms/ToDosIndex";
 import SpaceIsland from "../components/scenes/SpaceIsland.js";
+import { Sticker } from "../components/Sticker";
+// import SVGMoon from "../components/stickers/SVGMoon";
 
 export default function ProductivityHub({ todosData }) {
 
@@ -20,13 +22,14 @@ export default function ProductivityHub({ todosData }) {
     ];
     setFormData(newTodoEntry);
     setTodosDataState(updatedTodosData);
-    // console.log("(2) UPDATED STATE OBJECT \n formData: \n", formData)
-    console.log("'todosDataState'", todosDataState, updatedTodosData);
   };
 
   // |--- - - - - - - - - - - - - - - - C H E C K  oFF TODO
   const updateCompletedItems = (newCompletedItems) => {
     setCompletedItems(newCompletedItems);
+    // #COUNT COMPLETED ITEMS
+    // HAND <SCENE THE #COUNT
+    // <SCENE KNOWS TO RENDER #COUNT STICKERS
   };
 
   return (
@@ -38,8 +41,10 @@ export default function ProductivityHub({ todosData }) {
           completedItems={completedItems}
           updateCompletedItems={setCompletedItems}
         />
+        {console.log(formData, "||", completedItems, "||", todosDataState)}
       </div>
       <SpaceIsland />
+
     </section>
   );
 }

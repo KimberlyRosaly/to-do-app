@@ -5,6 +5,7 @@ import Heading from '../components/Heading';
 import ProductivityHub from '../containers/ProductivityHub'
 import { data } from '../assets/data'
 
+// -------------[ C O N T A I N E R ]------------------
 // -------------[ HOME - HUB - DASHBOARD | FOR SIGNED IN USERS ]------------------
 export default function Nexus() {
     return(<>
