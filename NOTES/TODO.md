@@ -1,6 +1,16 @@
 T O D O
 ================================================
 ================================================
+
+-CHECK BOX IS TICKED
+-ENTER CHECK BOX HANDLER
+-
+
+
+
+
+================================================
+================================================
   // LET'S MAKE SOME P S E U D O C O D E !
   // ::: GOAL : EACH CHECKED OFF TODO GENERATES A SINGLE STICKER
   // check todos array [1 aaa 2 bbb 3 ccc]
