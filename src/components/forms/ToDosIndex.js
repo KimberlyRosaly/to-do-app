@@ -5,7 +5,6 @@ export default function ToDosIndex({todosData, completedItems, updateCompletedIt
 const handleCheckboxChange = (listItemID) => {
     // CONDITION | STATE:COMPLETED=ID[1,2,3] CONTAINS ID[9].DOM ELEMENT GRAB
     if (completedItems.includes(listItemID)) {
-
         const newCompletedItems = completedItems.filter((completedItemID) => completedItemID !== listItemID);
 
         updateCompletedItems(newCompletedItems); //send an updated value TO THE PARENT!!!
@@ -13,7 +12,6 @@ const handleCheckboxChange = (listItemID) => {
     } else {
 
         const newCompletedItems = [...completedItems, listItemID];
-
         updateCompletedItems(newCompletedItems);
 
     }
