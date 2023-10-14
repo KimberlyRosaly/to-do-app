@@ -26,6 +26,7 @@ export default function ProductivityHub({ todosData }) {
 
   // |--- - - - - - - - - - - - - - - - C H E C K  oFF TODO
   const updateCompletedItems = (newCompletedItems) => {
+    console.log(newCompletedItems.length);
     setCompletedItems(newCompletedItems);
     // #COUNT COMPLETED ITEMS
     // HAND <SCENE THE #COUNT
