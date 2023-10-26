@@ -2,6 +2,7 @@ import { Routes, Route } from "react-router-dom";
 import "./styles.css";
 import Home from "./containers/Home.js";
 import Nexus from "./containers/Nexus.js";
+import LogIn from "./containers/LogIn.js";
 
 export default function App() {
   return (
