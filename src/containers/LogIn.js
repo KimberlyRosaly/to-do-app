@@ -7,9 +7,14 @@ export default function LogIn() {
             <main>
                 <section>
                     <form>
-                        <label>FIELD
+                        <label>USERNAME:
                             <input type="text" />  
-                        </label>                      
+                        </label>    
+<br />
+                        <label>PASSWORD:
+                            <input type="text" />  
+                        </label>    
+<br />
                         <button>SUBMIT</button>
                     </form>
                 </section>
