@@ -4,7 +4,13 @@ import { Link } from 'react-router-dom'
 const Signup = () => {
     return(
         <>
-            <Link to={'/signup'}><button>A SIGN UP BUTTON</button></Link>
+            <Link to={'/signup'}>
+                <button
+                    style={{ 
+                    padding: '1.75em'}}>
+                        A SIGN UP BUTTON
+                </button>
+            </Link>
         </>
     )
 }
