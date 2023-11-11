@@ -91,6 +91,11 @@ nav ul li {
   text-decoration: none !important;
 }
 /* ___________________________________________ */
+.pretty-button {
+    border: dashed 4px black;
+  /* EM = ELEMENT FONT SIZE | REM = ROOT ELEMENT FONT SIZE*/
+  padding: 1em;
+}
 /* ___________________________________________ */
                                      /* FOOTER */
 .footer {
